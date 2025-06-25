@@ -1,14 +1,11 @@
 fn main() {
-  let day = 4;
+  //match instead of if..else like switch
+  let day= 2;
+  let result = match day {
+    1 | 2 | 3 | 4 | 5  => "WeekDays",
+    6 | 7 => "Weekends",
+    _ => "Invalid Day",
+  };
 
-  match day {
-    1 => println!("Monday"),
-    2 => println!("Tuesday"),
-    3 => println!("Wednesday"),
-    4 => println!("Thursday"),
-    5 => println!("Friday"),
-    6 => println!("Saturday"),
-    7 => println!("Sunday"),
-    _ => println!("Invalid day."),
-  }
+  println!("{result}");
 }
